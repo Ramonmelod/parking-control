@@ -72,5 +72,5 @@ psql --host=localhost --username=postgres --port=5432 -d parking_control_db
 - You can delete the inserted value by the post above with the command below:
 
 ```sql
-parking_control_db=# delete from TB_PARKING_SPOT where license_plate_car = 'RRS8562';
+DELETE FROM TB_PARKING_SPOT WHERE license_plate_car = 'RRS8562';
 ```
