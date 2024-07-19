@@ -4,7 +4,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class ParkingSpotModelsDto {
+public class ParkingSpotDto {
 
     @NotBlank
     private String parkinSpotNumber;
