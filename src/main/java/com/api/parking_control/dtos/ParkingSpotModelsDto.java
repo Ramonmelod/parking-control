@@ -1,7 +1,9 @@
 package com.api.parking_control.dtos;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import lombok.Data;
 
+@Data
 public class ParkingSpotModelsDto {
 
     @NotBlank
@@ -19,6 +21,7 @@ public class ParkingSpotModelsDto {
     private String apartament;
     @NotBlank
     private String block;
+    
 
     
 }

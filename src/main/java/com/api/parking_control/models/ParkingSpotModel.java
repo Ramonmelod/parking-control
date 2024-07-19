@@ -8,11 +8,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 
+@Data
 @Entity
 @Table(name = "TB_PARKING_SPOT") // creates the table TB_PARKING_SPOT
 public class ParkingSpotModel implements Serializable{ //Serializable allow the convetion from java objects to binary for tranference
@@ -37,5 +39,6 @@ public class ParkingSpotModel implements Serializable{ //Serializable allow the 
     private String apartament;
     @Column(nullable = false, length = 30)
     private String block;
+    
 
 }
