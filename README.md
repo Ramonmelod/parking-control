@@ -53,3 +53,24 @@ CREATE DATABASE parking_control_db;
 ```sh
 psql --host=localhost --username=postgres --port=5432 -d parking_control_db
 ```
+
+- You can make a post in the endpoint `http://localhost:8080/parking-spot`. If you wish use the following Json:
+
+```json
+{
+  "parkinSpotNumber": "2058",
+  "licensePlateCar": "RRS8562",
+  "brandCar": "audi",
+  "modelCar": "95",
+  "colorCar": "black",
+  "responsibleName": "Carlos Daniel",
+  "apartament": "285",
+  "block": "B"
+}
+```
+
+- You can delete the inserted value by the post above with the command below:
+
+```sql
+parking_control_db=# delete from TB_PARKING_SPOT where license_plate_car = 'RRS8562';
+```
