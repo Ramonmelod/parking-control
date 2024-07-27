@@ -7,7 +7,7 @@ import lombok.Data;
 public class ParkingSpotDto {
 
     @NotBlank
-    private String parkinSpotNumber;
+    private String parkingSpotNumber;
     @NotBlank
     @Size(max = 7)
     private String licensePlateCar;

@@ -9,5 +9,8 @@ import com.api.parking_control.models.ParkingSpotModel;
 
 @Repository // this annotations must not be here, because the JpaRepository already has this annotation in itself
 public interface ParkingSpotRepository extends JpaRepository <ParkingSpotModel, UUID> { // JpaRepository has methods like findAll() and Save()
+    boolean existsByLicensePlateCar(String licensePlateCar);
+    boolean existsByParkingSpotNumber(String parkingSpotNumber);
+    boolean existsByApartamentAndBlock(String apartament, String block);
     
 }
