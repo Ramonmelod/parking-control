@@ -58,7 +58,7 @@ psql --host=localhost --username=postgres --port=5432 -d parking_control_db
 
 ```json
 {
-  "parkinSpotNumber": "2058",
+  "parkingSpotNumber": "2058",
   "licensePlateCar": "RRS8562",
   "brandCar": "audi",
   "modelCar": "95",
