@@ -54,7 +54,7 @@ CREATE DATABASE parking_control_db;
 psql --host=localhost --username=postgres --port=5432 -d parking_control_db
 ```
 
-- You can make a post in the endpoint `http://localhost:8080/parking-spot`. If you wish use the following Json:
+- You can make a post in the endpoint `http://localhost:8080/parking-spot`. If you wish use the followings Jsons:
 
 ```json
 {
@@ -66,6 +66,19 @@ psql --host=localhost --username=postgres --port=5432 -d parking_control_db
   "responsibleName": "Carlos Daniel",
   "apartament": "285",
   "block": "B"
+}
+```
+
+```json
+{
+  "parkingSpotNumber": "4587",
+  "licensePlateCar": "PQT5869",
+  "brandCar": "FIAT",
+  "modelCar": "UNO",
+  "colorCar": "red",
+  "responsibleName": "Ramon Melo",
+  "apartament": "50",
+  "block": "A"
 }
 ```
 
