@@ -54,7 +54,7 @@ CREATE DATABASE parking_control_db;
 psql --host=localhost --username=postgres --port=5432 -d parking_control_db
 ```
 
-- You can make a post in the endpoint `http://localhost:8080/parking-spot`. If you wish use the followings Jsons:
+- You can make a post in the endpoint `http://localhost:8080/parking-spot`,using a request body like the ones below:
 
 ```json
 {
@@ -87,3 +87,5 @@ psql --host=localhost --username=postgres --port=5432 -d parking_control_db
 ```sql
 DELETE FROM TB_PARKING_SPOT WHERE license_plate_car = 'RRS8562';
 ```
+- You can see all the Paking spots already recorded by acessing the endpoint `http://localhost:8080/parking-spot` using a `GET method`. 
+- You can see informations about a specific recorded paking spots by acessing the endpoint `http://localhost:8080/parking-spot/{id}`.
