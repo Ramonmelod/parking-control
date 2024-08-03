@@ -49,7 +49,7 @@ CREATE DATABASE parking_control_db;
 
 ```
 
-- Exit the dpostgres for to enter in the database created using the command:
+- Exit the postgres for to enter in the database created using the command:
 
 ```sh
 psql --host=localhost --username=postgres --port=5432 -d parking_control_db
